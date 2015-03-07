@@ -15,7 +15,7 @@ Transmission daemon and web interface to download and share all your favourite L
 
 **Run the container**
 
-    docker run -p 51413:51413/udp -p 9091:9091 -e USERNAME=example -e PASSWORD=changeme -v /path/to/incomplete:/transmission/incomplete:rw -v /path/to/complete:/transmission/complete:rw --name transmission cwhite92/transmission
+    docker run -p 51413:51413/udp -p 9091:9091 -e USERNAME=example -e PASSWORD=changeme -v /path/to/incomplete:/transmission/incomplete:rw -v /path/to/complete:/transmission/complete:rw --name transmission -d cwhite92/transmission
 
 **Options**
 
