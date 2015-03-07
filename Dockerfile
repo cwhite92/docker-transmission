@@ -17,8 +17,6 @@ ADD assets/start_transmission.sh /start_transmission.sh
 
 # Create required directories and permissions
 RUN mkdir -p /transmission/incomplete /transmission/complete && \
-    chown -R debian-transmission:debian-transmission /transmission && \
-    chown -R debian-transmission:debian-transmission /etc/transmission-daemon && \
     chmod +x /start_transmission.sh
 
 # Create volumes for downloads
