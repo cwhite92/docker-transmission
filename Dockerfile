@@ -25,6 +25,6 @@ VOLUME ["/transmission/complete"]
 
 # Expose ports
 EXPOSE 9091
-EXPOSE 12345
+EXPOSE 51413
 
 CMD ["/start_transmission.sh"]
